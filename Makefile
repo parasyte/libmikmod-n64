@@ -18,8 +18,8 @@ $(CURDIR)/build/:
 	mkdir $(CURDIR)/build
 
 install: libmikmod.a $(CURDIR)/include/mikmod.h
-	install -D --mode=644 libmikmod.a $(INSTALLDIR)/lib/libmikmod.a
-	install -D --mode=644 $(CURDIR)/include/mikmod.h $(INSTALLDIR)/include/mikmod.h
+	install -m 0644 libmikmod.a $(INSTALLDIR)/lib/libmikmod.a
+	install -m 0644 $(CURDIR)/include/mikmod.h $(INSTALLDIR)/include/mikmod.h
 
 .PHONY: clean
 clean:
