@@ -1,0 +1,13 @@
+## Build files
+*.a
+build/*.o
+
+## OSX junk
+.DS_Store
+.Trashes
+._*
+
+## Temporary files
+*.tmp
+*.swp
+*~
